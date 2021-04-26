@@ -10,6 +10,7 @@ const Welcome = ()=>import('@/views/Welcome')
 const UserList= ()=>import('@/components/content/user/UserList')
 const PowerList=()=>import('@/views/PowerList')
 const PowerRoleList=()=>import('@/views/PowerRoleList')
+const Goods_cate=()=>import('@/views/goods_category/Goods_cate')
 
 const routes = [
   {
@@ -40,6 +41,10 @@ const routes = [
       {
         path: '/roles',
         component:PowerRoleList
+      },
+      {
+        path: '/categories',
+        component:Goods_cate
       }
     ]
   }
