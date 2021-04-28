@@ -10,7 +10,10 @@ const Welcome = ()=>import('@/views/Welcome')
 const UserList= ()=>import('@/components/content/user/UserList')
 const PowerList=()=>import('@/views/PowerList')
 const PowerRoleList=()=>import('@/views/PowerRoleList')
-const Goods_cate=()=>import('@/views/goods_category/Goods_cate')
+const Goods_cate=()=>import('@/views/goods/Goods_cate')
+const CateParams=()=>import('@/views/goods/CateParams')
+const GoodsList =()=>import('@/views/goods/GoodsList')
+const GoodsAddPage=()=>import('@/views/goods/GoodsAddPage')
 
 const routes = [
   {
@@ -45,6 +48,18 @@ const routes = [
       {
         path: '/categories',
         component:Goods_cate
+      },
+      {
+        path: '/params',
+        component:CateParams
+      },
+      {
+        path:'/goods',
+        component:GoodsList
+      },
+      {
+        path: '/goods/add',
+        component:GoodsAddPage
       }
     ]
   }
