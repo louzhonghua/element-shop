@@ -11,6 +11,7 @@ const UserList= ()=>import('@/components/content/user/UserList')
 const PowerList=()=>import('@/views/PowerList')
 const PowerRoleList=()=>import('@/views/PowerRoleList')
 const Goods_cate=()=>import('@/views/goods_category/Goods_cate')
+const CateParams=()=>import('@/views/goods_manage/CateParams')
 
 const routes = [
   {
@@ -45,6 +46,10 @@ const routes = [
       {
         path: '/categories',
         component:Goods_cate
+      },
+      {
+        path: '/params',
+        component:CateParams
       }
     ]
   }
