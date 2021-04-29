@@ -14,6 +14,7 @@ const Goods_cate=()=>import('@/views/goods/Goods_cate')
 const CateParams=()=>import('@/views/goods/CateParams')
 const GoodsList =()=>import('@/views/goods/GoodsList')
 const GoodsAddPage=()=>import('@/views/goods/GoodsAddPage')
+const Order       =()=>import('@/views/order/Order')
 
 const routes = [
   {
@@ -60,6 +61,10 @@ const routes = [
       {
         path: '/goods/add',
         component:GoodsAddPage
+      },
+      {
+        path:'/orders',
+        component:Order
       }
     ]
   }
