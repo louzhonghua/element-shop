@@ -16,6 +16,8 @@ import 'quill/dist/quill.snow.css' // for snow theme
 import 'quill/dist/quill.bubble.css' // for bubble theme
 
 
+
+
 Vue.config.productionTip = false
 Vue.use(ElementUI);
 Vue.use(ZkTable)
@@ -40,6 +42,7 @@ Vue.filter('productReview',function (originVal) {
   if (originVal===0) return '已审核'
   return '未审核'
 })
+
 
 
 
