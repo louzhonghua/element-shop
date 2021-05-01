@@ -15,6 +15,7 @@ const CateParams=()=>import('@/views/goods/CateParams')
 const GoodsList =()=>import('@/views/goods/GoodsList')
 const GoodsAddPage=()=>import('@/views/goods/GoodsAddPage')
 const Order       =()=>import('@/views/order/Order')
+const Report      =()=>import("@/views/report/Report")
 
 const routes = [
   {
@@ -65,6 +66,10 @@ const routes = [
       {
         path:'/orders',
         component:Order
+      },
+      {
+        path: '/reports',
+        component:Report
       }
     ]
   }
