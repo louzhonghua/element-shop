@@ -10,6 +10,7 @@ import '@/assets/css/fonts/iconfont.css'
 import "./assets/css/common.less";
 import ZkTable from 'vue-table-with-tree-grid'
 import VueQuillEditor from 'vue-quill-editor'
+import '@/plugins/echarts'
 
 
 import 'quill/dist/quill.core.css' // import styles

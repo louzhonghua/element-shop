@@ -16,6 +16,8 @@ const GoodsList =()=>import('@/views/goods/GoodsList')
 const GoodsAddPage=()=>import('@/views/goods/GoodsAddPage')
 const Order       =()=>import('@/views/order/Order')
 const Report      =()=>import("@/views/report/Report")
+const CountUp     =()=>import("@/components/common/CountUp")
+const Swiper      =()=>import('@/components/common/Swiper')
 
 const routes = [
   {
@@ -34,6 +36,10 @@ const routes = [
       {
         path:'/welcome',
         component:Welcome
+      },
+      {
+        path:'/welcome/countUp',
+        component:CountUp
       },
       {
         path: '/users',
@@ -70,6 +76,10 @@ const routes = [
       {
         path: '/reports',
         component:Report
+      },
+      {
+        path: '/welcome/swiper',
+        component:Swiper
       }
     ]
   }
