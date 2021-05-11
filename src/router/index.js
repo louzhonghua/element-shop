@@ -10,6 +10,14 @@ const Welcome = ()=>import('@/views/Welcome')
 const UserList= ()=>import('@/components/content/user/UserList')
 const PowerList=()=>import('@/views/PowerList')
 const PowerRoleList=()=>import('@/views/PowerRoleList')
+const Goods_cate=()=>import('@/views/goods/Goods_cate')
+const CateParams=()=>import('@/views/goods/CateParams')
+const GoodsList =()=>import('@/views/goods/GoodsList')
+const GoodsAddPage=()=>import('@/views/goods/GoodsAddPage')
+const Order       =()=>import('@/views/order/Order')
+const Report      =()=>import("@/views/report/Report")
+const CountUp     =()=>import("@/components/common/CountUp")
+const Swiper      =()=>import('@/components/common/Swiper')
 
 const routes = [
   {
@@ -30,6 +38,10 @@ const routes = [
         component:Welcome
       },
       {
+        path:'/welcome/countUp',
+        component:CountUp
+      },
+      {
         path: '/users',
         component:UserList
       },
@@ -40,6 +52,34 @@ const routes = [
       {
         path: '/roles',
         component:PowerRoleList
+      },
+      {
+        path: '/categories',
+        component:Goods_cate
+      },
+      {
+        path: '/params',
+        component:CateParams
+      },
+      {
+        path:'/goods',
+        component:GoodsList
+      },
+      {
+        path: '/goods/add',
+        component:GoodsAddPage
+      },
+      {
+        path:'/orders',
+        component:Order
+      },
+      {
+        path: '/reports',
+        component:Report
+      },
+      {
+        path: '/welcome/swiper',
+        component:Swiper
       }
     ]
   }
