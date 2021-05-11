@@ -38,6 +38,8 @@
 
 <script>
 import {getPowerList} from "@/network/powerlist";
+import Sortable from 'sortablejs'
+
 
 export default {
   name: "PowerList",
@@ -48,6 +50,10 @@ export default {
   },
   created() {
     this._getPowerList();
+  },
+  mounted() {
+    let el = document.querySelectorAll('.el-table__body-wrapper > table > tbody')[0]
+    let sortable = Sortable.create(el)
   },
   methods: {
     //获取权限列表
